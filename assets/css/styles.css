@@ -1,0 +1,99 @@
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: hsl(217, 54%, 11%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--soft-blue);
+}
+
+h4 a {
+  color: white;
+  text-decoration: initial;
+  font-weight: 600;
+}
+
+h4 a:hover {
+  color: var(--cyan);
+}
+
+.container {
+  padding: 1.25rem;
+  background-color: var(--bg-card);
+}
+
+.amount span {
+  color: var(--cyan);
+}
+
+.time-left span {
+  color: var(--soft-blue);
+}
+
+.author a {
+  color: white;
+  text-decoration: initial;
+}
+
+.author a:hover {
+  color: var(--cyan);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.container ul li img {
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 500px) {
+  .container {
+    width: 450px;
+  }
+}
+
+.container .image {
+  position: relative;
+}
+
+.container .image div {
+  position: absolute;
+  background-color: var(--cyan);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+}
+
+.container .image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
